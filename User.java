@@ -1,4 +1,4 @@
-public class User {
+public abstract class User {
     protected String name;
     protected String userId;
 
@@ -10,6 +10,8 @@ public class User {
     public void interact() {
         System.out.println("User interacting with the system.");
     }
+
+    public abstract boolean hasPermission(String action);
 
     // Getters and setters
     public String getName() {

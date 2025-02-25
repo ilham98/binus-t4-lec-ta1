@@ -9,4 +9,8 @@ public class Member extends User {
         System.out.println("Member borrowing or returning books.");
     }
 
+    @Override
+    public boolean hasPermission(String action) {
+        return action.equals("borrow") || action.equals("return");
+    }
 }

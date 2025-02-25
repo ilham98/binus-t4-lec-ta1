@@ -9,4 +9,8 @@ public class Admin extends User {
         System.out.println("Admin managing the library system.");
     }
 
+    @Override
+    public boolean hasPermission(String action) {
+        return true; // Admin has permission for all actions
+    }
 }
